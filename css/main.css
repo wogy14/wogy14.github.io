@@ -1,7 +1,7 @@
 body{
     fon-family:Roboto;
 }
-.navbar{
+#navbar{
     border-bottom:2px solid #c3c7cb;
     padding:30px 0 ;
     background:white;
@@ -13,6 +13,25 @@ body{
 #navigation .nav-link{
     color:black;
     font-size:16px;
+}
+.menu_mob{
+    background:#f05824;
+    box-shadow:0 5px 5px rgba(0,0,0,0.5);
+    padding:5px 0;
+}
+.menu_mob .fa-bars{
+    color:white;
+    font-size:36px;
+}
+.menu_mob ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    display:none;
+}
+.menu_mob .nav-link{
+    color:white;
 }
 .contact_tel{
     color:black;
@@ -26,10 +45,15 @@ body{
     color:white;
     padding:5px 0px;
     margin-top:10px;
-    border-bottom:2px solid #b64119;
+    border-bottom:2px solid #b64119;   
+    display:inline-block;
 }
-#bl_404{
-    margin-top:50px;
+.ysb_btn:hover{
+    color:white;
+    text-decoration:none;
+}
+#bl_404{    
+    padding:50px 0 ;
 }
 #bl_404 h2{
     color:#41506d;
@@ -47,4 +71,79 @@ body{
 .gray_btn{
     background:#b7b7b7;
     border-bottom:2px solid #8d8d8d;
+}
+.socials{
+    margin-bottom:20px;
+}
+.socials .ysb_btn i {
+    display:inline-block;
+}
+.socials .ysb_btn{
+    font-size:30px;
+    width:45px;
+    height:45px;
+    margin:10px;
+}
+footer{
+    padding:50px;
+    background: #2c3e50;
+    color:#dcdcdc;
+    font-size:18px;
+}
+footer a{
+    color:#dcdcdc;
+}
+footer a:hover{
+    color:#dcdcdc;
+}
+footer p{
+    padding:0;
+    margin:0;
+}
+.footer_p{
+    padding:11px 0;
+}
+.footer_socials a{
+    display:inline-block;
+    font-size:18px;
+    color:#dcdcdc;
+    margin:0 5px;
+}
+.footer_nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;    
+}
+.footer_nav li{
+    margin:17px 0;
+}
+.footer_nav a{
+    color:#dcdcdc;    
+}
+#blog_container{
+    padding:30px 0;
+}
+.breadcrumbs{
+    color:#959596;
+}
+.breadcrumbs a{
+    color:#41506d;
+    text-decoration:underline;
+}
+.main_h{
+    text-align:center;
+    font-weight:bold;
+    margin-top:30px;
+}
+.new{
+    padding:20px 3px;
+    border-bottom:2px solid #c3c7cb;   
+    font-size:18px;
+}
+.new_title a{
+    color: black;
+    font-weight:bold;
+}
+.new_date{
+    color:#7f7f7f;
 }
