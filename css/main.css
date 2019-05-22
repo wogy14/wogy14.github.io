@@ -1,9 +1,38 @@
+:root{
+    --main-size:3.125vw;
+    --container-width:calc(100vw - 30px);
+}
+@media (min-width:576px){
+    :root{
+        --main-size:2.34vw;
+        --container-width:510px;
+    }
+}
+@media (min-width:768px){
+    :root{
+        --main-size:2vw;
+        --container-width:690px;
+    }
+
+}
+@media (min-width:992px){
+    :root{
+        --main-size:1.75vw;
+        --container-width:930px;
+    }
+}
+@media (min-width:1200px){
+    :root{
+        --main-size:1.6vw;
+        --container-width:1110px;
+    }
+}
 body{
-    fon-family:Roboto;
+    font-family:Roboto;
 }
 #navbar{
     border-bottom:2px solid #c3c7cb;
-    padding:30px 0 ;
+    padding:calc(var(--main-size)) 0 ;
     background:white;
 }
 #navigation{
@@ -12,7 +41,7 @@ body{
 }
 #navigation .nav-link{
     color:black;
-    font-size:16px;
+    font-size:calc(var(--main-size)*18/30);
 }
 .menu_mob{
     background:#f05824;
@@ -21,7 +50,7 @@ body{
 }
 .menu_mob .fa-bars{
     color:white;
-    font-size:36px;
+    font-size:calc(var(--main-size)*36/30);
 }
 .menu_mob ul{
     list-style-type:none;
@@ -35,7 +64,7 @@ body{
 }
 .contact_tel{
     color:black;
-    font-size:16px;    
+    font-size:calc(var(--main-size)*18/30);    
     text-align:center;
 }
 .ysb_btn{
@@ -53,19 +82,19 @@ body{
     text-decoration:none;
 }
 #bl_404{    
-    padding:50px 0 ;
+    padding:calc(var(--main-size)*50/30) 0 ;
 }
 #bl_404 h2{
     color:#41506d;
-    font-size:36px;
+    font-size:calc(var(--main-size)*40/30);
 }
 #bl_404 h3{
     color:#41506d;
-    font-size:26px;
+    font-size:calc(var(--main-size));
 }
 .btn_404{
-    margin:30px;
-    font-size:18px;
+    margin:calc(var(--main-size));
+    font-size:calc(var(--main-size)*25/30);
     padding:5px 25px;
 }
 .gray_btn{
@@ -79,7 +108,7 @@ body{
     display:inline-block;
 }
 .socials .ysb_btn{
-    font-size:30px;
+    font-size:calc(var(--main-size)*1.5);
     width:45px;
     height:45px;
     margin:10px;
@@ -88,7 +117,7 @@ footer{
     padding:50px;
     background: #2c3e50;
     color:#dcdcdc;
-    font-size:18px;
+    font-size:calc(var(--main-size)*22/30);
 }
 footer a{
     color:#dcdcdc;
@@ -138,7 +167,7 @@ footer p{
 .new{
     padding:20px 3px;
     border-bottom:2px solid #c3c7cb;   
-    font-size:18px;
+    font-size:calc(var(--main-size)*22/30);
 }
 .new_title a{
     color: black;
