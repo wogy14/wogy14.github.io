@@ -394,8 +394,8 @@ h4.btitle{
 }
 .container_info h3{
     font-weight:bold;
-    font-size:26px;
-    margin:0;
+    font-size:22px;
+    margin:0;    
 }
 .container_info h4.cont_time{
     font-size:16px;
@@ -405,6 +405,13 @@ h4.btitle{
 .container_info .cont_image{
     width:100%;
     height:calc((var(--container-width)/2 - 60px)/3);
+}
+.container_info .cont_pref{
+    text-align:center;
+}
+.container_info .cont_pref img{
+    width:20%;
+    margin:0 1%;
 }
 .p_cont{
     font-size:14px;
@@ -439,13 +446,26 @@ h4.btitle{
     display:block;
 }
 @media (max-width:992px){
+    .container_info h3,.container_info h4{
+        text-align:center;
+    }
     .container_info .cont_image{
         height:calc(var(--container-width)/2);
+    }
+    .container_info{
+        text-align:center;
+    }
+    .container_info .cont_pref img{
+        width:7%;
+        margin:0 1%;
     }
     .map{        
         height:40vh;
         width:calc(var(--container-width));
     }
+    .p_cont{
+        font-size:18px;
+    }    
 }
 .article{
     font-size:14px;
