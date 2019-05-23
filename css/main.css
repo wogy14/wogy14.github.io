@@ -151,6 +151,7 @@ footer a:hover{
 }
 .main_container{
     padding:30px 0;
+    overflow:hidden;
 }
 .breadcrumbs{
     color:#959596;
@@ -224,11 +225,42 @@ h2.main_h{
     font-size:36px;
     margin:40px 0;
 }
+
 .bimage{
     position:relative;
     width:100%;
     height:calc(3*(var(--container-width)/3 - 30px)/4);
     transition:0.5s;
+}
+.btitle{
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    padding:15px 0;
+    margin-bottom:40px;
+    margin-top:0;
+}
+#boxes .row>div{
+    overflow:hidden;
+}
+@media (max-width:992px){
+    .bimage{
+        height:calc(3*(var(--container-width) - 30px)/4);
+        margin-top:calc(-3*(var(--container-width) - 30px)/4);
+    }
+    .btitle{
+        text-align:left;
+        background:white;
+        padding:15px;
+        border-radius:5px;
+    }
+    .btitle .col-lg-0{
+        text-align:center;
+    }
+    .btitle .fa-angle-down{
+        font-size:40px;
+        color:#f05824;
+    }
 }
 .detail_btn{
     border-radius:3px;
@@ -257,13 +289,7 @@ h2.main_h{
 .hover_img_block a{
     width:45%;
 }
-.btitle{
-    font-size:20px;
-    font-weight:bold;
-    text-align:center;
-    padding:15px 0;
-    padding-bottom:40px;
-}
+
 h4.btitle{
     font-size:16px;
 }
