@@ -20,7 +20,7 @@ $(document).ready(function(){
     var containers = $(".containers_one"); 
 //    for(var i = 0;i< containers.size();i++){        
 //        $(containers[i]).find(".map>iframe").height(($(containers[i]).find(".cont").height())+"px");
-//    }
+//    }    
     $('.feedback_slider').slick({
         lazyLoad: 'ondemand',
         slidesToShow: 3,
