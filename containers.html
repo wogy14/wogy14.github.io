@@ -1,0 +1,292 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>    
+<body>
+   <nav class=" navbar-light navbar-expand-lg" id="navbar">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-2 col-12">
+                    <a href="#" class="navbar-brand">
+                        <img alt="logo"  src="img/logo.png">
+                    </a>
+                </div>
+                <div class="col-lg-7">                                  
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto nav-pills" id="navigation">
+                            <li class="nav-item"><a class="nav-link" href="#">Склады</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Контейнеры</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Стоимость</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Для дома</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Для бизнеса</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>                
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col-lg-2 col-xs-12 justify-content-center text-center">
+                    <a class="contact_tel" href="tel:+380976442424">+38(097)-644-24-24</a><br>
+                    <a class="contact_tel" href="tel:+380976442424">+38(097)-644-24-24</a><br>
+                    <a class="contact_tel" href="tel:+380976442424">+38(097)-644-24-24</a>
+                    <div class="d-xs-block d-lg-none">
+                        <a href="#">UA</a>
+                        <a href="#">RU</a>
+                        <a href="#">EN</a>
+                    </div><a href="#" class="ysb_btn w-100">Заказать звонок</a>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block">
+                    <select>
+                        <option>UA</option>
+                        <option>RU</option>
+                        <option>EN</option>
+                    </select>
+                </div>                
+            </div>
+        </div>        
+    </nav>
+    <div class="d-md-block d-lg-none text-left menu_mob">
+        <div class="container">
+            <span class="fas fa-bars" id="menu_btn" onclick="menu()"></span>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Склады</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Контейнеры</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Стоимость</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Для дома</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Для бизнеса</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>                
+            </ul>
+        </div>        
+    </div>
+    
+    <div id="bussiness_container" class="container main_container">
+        <div class="breadcrumbs"><a href="#">Главная</a>/Контейнеры</div>
+        <h1 class="main_h">Контейнеры</h1>
+        <div class="row params_containers">
+            <div class="col-6">
+                Найдено: <span class="color_blue">3 контейнера</span>
+            </div>
+            <div class="col-6 text-right">
+                Город: <span class="color_blue">Киев </span><img src="img/reload.png" width="20px;">
+            </div>
+        </div>
+    </div>
+    <div style="background:#f7f7f7" id="boxes">
+        <div class="container main_container">
+            <div class="row containers_one d-flex">
+                <div class="col-12 col-lg-6 cont">
+                    <div class="container_info">
+                        <h3 class="color_blue ">Контейнер 1</h3>
+                        <h4 class="cont_time">Доступ 24 часа 7 дней</h4>
+                        <div class="row main_cont_info">
+                            <div class="col-12 col-lg-4">
+                                <div class="cont_image" style="background:url(img/container.png);background-size:cover">
+                                </div>
+                            </div>                        
+                            <div class="col-12 col-lg-8">
+                                <div class="row" style="margin-top:7px;">
+                                    <div class="col-6 col-lg-12">
+                                        <p class="p_cont">г. Киев, Дарницкий район,<br>Харьковское шоссе, 201</p>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <p class="p_cont">+38(093)-644-24-24</p>
+                                        <p class="p_cont price_cont">м² от 700 грн/мес.</p>
+                                    </div>
+                                </div>
+                                <div class="text-center text-lg-left">
+                                    <a href="#" class="ysb_btn">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 map">
+                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    
+                </div>
+            </div>
+            <div class="row containers_one d-none d-lg-flex">
+                <div class="col-12 col-lg-6 cont">
+                    <div class="container_info">
+                        <h3 class="color_blue ">Контейнер 2</h3>
+                        <h4 class="cont_time">Доступ 24 часа 7 дней</h4>
+                        <div class="row main_cont_info">
+                            <div class="col-12 col-lg-4">
+                                <div class="cont_image" style="background:url(img/container.png);background-size:cover">
+                                </div>
+                            </div>                        
+                            <div class="col-12 col-lg-8">
+                                <div class="row" style="margin-top:7px;">
+                                    <div class="col-6 col-lg-12">
+                                        <p class="p_cont">г. Киев, Дарницкий район,<br>Харьковское шоссе, 201</p>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <p class="p_cont">+38(093)-644-24-24</p>
+                                        <p class="p_cont price_cont">м² от 700 грн/мес.</p>
+                                    </div>
+                                </div>
+                                <div class="text-center text-lg-left">
+                                    <a href="#" class="ysb_btn">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 map">                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                    
+                </div>
+            </div>
+            <div class="row containers_one d-none d-lg-flex">
+                <div class="col-12 col-lg-6 cont">
+                    <div class="container_info">
+                        <h3 class="color_blue ">Контейнер 3</h3>
+                        <h4 class="cont_time">Доступ 24 часа 7 дней</h4>
+                        <div class="row main_cont_info">
+                            <div class="col-12 col-lg-4">
+                                <div class="cont_image" style="background:url(img/container.png);background-size:cover">
+                                </div>
+                            </div>                        
+                            <div class="col-12 col-lg-8">
+                                <div class="row" style="margin-top:7px;">
+                                    <div class="col-6 col-lg-12">
+                                        <p class="p_cont">г. Киев, Дарницкий район,<br>Харьковское шоссе, 201</p>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <p class="p_cont">+38(093)-644-24-24</p>
+                                        <p class="p_cont price_cont">м² от 700 грн/мес.</p>
+                                    </div>
+                                </div>
+                                <div class="text-center text-lg-left">
+                                    <a href="#" class="ysb_btn">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 map">                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                    
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="container main_container">
+        <h2 class="main_h">Бесплатные услуги</h2>
+        <div class="row">
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/wi-fi.png">
+                <h4 class="btitle">Быстрый интернет</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/plug.png">
+                <h4 class="btitle">Розетки</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/parking.png">
+                <h4 class="btitle">Парковка</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/coffee.png">
+                <h4 class="btitle">Гарячие напитки</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/wc.png">
+                <h4 class="btitle">Туалет</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/elevator.png">
+                <h4 class="btitle">Грузовой лифт</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/lamp.png">
+                <h4 class="btitle">Освещение</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/tray.png">
+                <h4 class="btitle">Тележки</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/clock.png">
+                <h4 class="btitle">Работаем 24 часа 7 дней в неделю</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/size-01.png">
+                <h4 class="btitle">Смена размера в любой момент от 1 до 100 м²</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/cam.png">
+                <h4 class="btitle">Круглосуточное видеонаблюдение</h4>
+            </div>
+            <div class="col-lg-3 col-4 free-th">
+                <img src="img/seurity.png">
+                <h4 class="btitle">Охрана</h4>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-xs-center text-sm-center text-md-left">
+                    <img src="img/logo.png" alt="logo" class="w-50 footer_p">
+                    <p class="footer_p">Мы в соц. сетях:</p>
+                    <div class="footer_socials footer_p  justify-content-between ">
+                        <a href="" class=""><i class="fab fa-youtube"></i></a>                        
+                        <a href="" class=""><i class="fab fa-instagram"></i></a>
+                        <a href="" class=""><i class="fab fa-facebook-square"></i></a>
+                        <a href="" class=""><i class="fab fa-viber"></i></a>    
+                        <a href="" class=""><i class="fab fa-telegram-plane"></i></a>        
+                        <a href="" class=""><i class="fab fa-whatsapp"></i></a>                        
+                    </div>
+                    <p class="footer_p">Принимаем:</p>
+                    <div class="footer_p">
+                        <img src="img/mastercard.png" alt="" width="25%">
+                        <img src="img/visa.png" alt="" width="25%">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul class="footer_nav">
+                        <li ><a href="#">Склады</a></li>
+                        <li ><a href="#">Контейнеры</a></li>
+                        <li ><a href="#">Стоимость</a></li>
+                        <li ><a href="#">Для дома</a></li>
+                        <li ><a href="#">Для бизнеса</a></li>
+                        <li ><a href="#">О компании</a></li>  
+                    </ul>
+                </div>                
+                <div class="col-md-3 col-sm-6">
+                    <ul class="footer_nav">
+                        <li ><a href="#">О компании</a></li>
+                        <li ><a href="#">Блог</a></li>
+                        <li ><a href="#">Договор-оферта</a></li>
+                        <li ><a href="#">Обработка персональных данных</a></li>                        
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <p class="footer_p">
+                        <a href="tel:+38(093)-644-24-24">+38(093)-644-24-24</a><br>
+                        <a href="tel:+38(095)-644-24-24">+38(095)-644-24-24</a><br>
+                        <a href="tel:+38(097)-644-24-24">+38(097)-644-24-24</a><br>
+                    </p>
+                    <p class="footer_p">
+                        <a href="mailto:yoursafeboxysb@gmail.com">yoursafeboxysb@gmail.com</a>                        
+                    </p>
+                    <div class="footer_p">
+                        <p>г. Киев,</p>
+                        <p>ул. Бориспольская, 7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+    
