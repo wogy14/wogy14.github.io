@@ -255,7 +255,7 @@ h2.main_h{
         height:calc(3*(var(--container-width) - 30px)/4);
         margin-top:calc(-3*(var(--container-width) - 30px)/4);
     }
-    .btitle{
+    #boxes .btitle{
         text-align:left;
         background:white;
         padding:15px;
@@ -602,4 +602,92 @@ h4.btitle{
 .about_box_image{
     width:100%;    
     height:calc(((var(--container-width)*3/4 -30px)/3 - 30px)/1.25);
+}
+.price_desc h3{
+    font-weight:bold;
+    text-align:center;
+    font-size:24px;
+}
+.price_btn{
+    text-align:center;
+    margin:10px 0;
+}
+.price_btn span{
+    display:inline-block;
+    width:80%;
+    padding:5px;
+    border-radius:5px;
+    border:2px solid #d8dadd;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    color:#41506d;
+}
+.price_btn span.active{
+    background:white;
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2);
+    color:#f05824;
+}
+.find_price{
+    background:white;
+    padding:15px 30px;
+    width:70%;
+    text-align:center;
+    box-shadow:0px 0px 15px 0px rgba(0,0,0,0.2);
+    border-radius:5px;
+}
+.find_price h4{
+    font-size:20px;
+    margin-bottom:40px;
+}
+.find_price p{
+    font-size:16px;
+    margin-bottom:40px;
+}
+.find_price .ysb_btn{
+    width:50%;
+}
+.price_block .price_block_info{
+    background:white;
+}
+.price_block .head_price_info{
+    padding:15px 30px;
+}
+.price_block .head_price_info h4{
+    font-size:20px;
+}
+.price_block .head_price_info h5{
+    font-size:14px;
+    color:#7f7f7f;
+}
+.head_price_info a{
+    font-size:14px;
+    color:#5899e4;
+    text-decoration:underline;
+}
+.price_one_item{
+    padding:15px 30px;
+    border-top:2px solid #c3c7cb;
+}
+.price_one_item .square{
+    color:#41506d;
+    font-weight:bold;
+    font-size:18px;
+}
+.price_one_item .detail{
+    color:#7f7f7f;
+    font-size:14px;
+    margin:0;
+}
+.price_one_item .price{
+    color:#f05824;
+    font-weight:bold;
+    font-size:18px;
+}
+.price_one_item .ysb_btn{
+    width:85%;
+    text-align:center;
+}
+.price_block{
+    margin-top:30px;
 }
