@@ -780,7 +780,7 @@ h4.btitle{
     padding:15px;
     border-radius:5px;  
     position:relative;
-    width:60%;
+    width:60%;    
 }
 .book_form:before{
     position:absolute;
@@ -796,9 +796,71 @@ h4.btitle{
     border-radius:5px;
     border:2px solid #41506d;
     padding:50px;
+    padding-bottom:10px;
 }
 .main_book_form h2{
     font-size:30px;
     color:black;
     font-weight:900;
+}
+.input_block{
+    position:relative; 
+    margin-bottom:30px;    
+}
+.input_block label{
+    position:absolute;
+    font-size:12px;
+    top: 5px;
+    left:25px;
+    color:#a7a7a7;
+}
+.input_block input,.input_block select{
+    width:100%;
+    padding:20px 20px 5px 20px;
+    border-radius:5px;
+    border:2px solid #a7a7a7;
+    outline:none;
+    font-size:20px;
+    color:#41506d;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    
+}
+.select_block:before{
+    position:absolute;
+    content:'';
+    width:60px;
+    height:100%;
+    right:0;
+    top:0;
+    background:url("../img/caret-down-solid.svg") center center no-repeat;
+    background-size: 30px 30px;
+    border-left:2px solid #a7a7a7;
+}
+.form_button{
+    border:none;
+    background:#c3c7cb;
+    color:white;
+    font-weight:bold;
+    width:100%;
+    padding: 15px 0 ;
+    border-radius:5px;
+    font-size:20px;
+    margin-bottom:40px;
+}
+.policy_agree .round{
+    width:25px;
+    height:25px;
+    border:2px solid #a7a7a7;
+    border-radius:100%;
+    float:left;
+    margin-top:10px;
+}
+.policy_agree p{
+    float:left;
+    margin:0;
+    margin-left:20px;
+    width:calc(90% - 25px - 20px);
+    
 }
