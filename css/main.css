@@ -219,6 +219,11 @@ footer a:hover{
 #contact_container .footer_p a{
     color:black;
 }
+@media (max-width:920px){
+    #contact_container{
+        text-align:center;
+    }
+}
 .main_p{
     color:black;
     font-size:18px;
@@ -326,7 +331,7 @@ h4.btitle{
 }
 .slick-prev,.slick-next{
     position:absolute;
-    top:50%;
+    top:45%;
     z-index:2;    
     display:inline-block;
     padding:10px 15px;
@@ -578,4 +583,23 @@ h4.btitle{
 .thank img{
     width:50px;
     margin-top:30px;
+}
+.about_info{
+    font-weight:600;
+}
+.about_slider_image{
+    width:100%;
+    height:calc((var(--container-width)/2 -30px)/1.5)!important;
+}
+.about_box_slide{
+    margin:0 15px;
+}
+.about_box_slide h3{
+    text-align:center;
+    font-size:20px;
+    margin-top:20px;
+}
+.about_box_image{
+    width:100%;    
+    height:calc(((var(--container-width)*3/4 -30px)/3 - 30px)/1.25);
 }
