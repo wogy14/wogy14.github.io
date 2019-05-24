@@ -691,3 +691,34 @@ h4.btitle{
 .price_block{
     margin-top:30px;
 }
+.pos_ul,.neg_ul{
+    padding-left:40px;
+    list-style-type:none;    
+}
+.pos_ul li,.neg_ul li{
+    margin:5px 0;
+    color:#7f7f7f;
+    font-size:18px;
+    position:relative;
+}
+.pos_ul li:before,.neg_ul li:before{
+    position:absolute;
+    left:-40px;
+    top:0;
+    content:'';
+    width:18px;
+    height:18px;
+}
+.pos_ul li:before{
+    background:url('../img/check-mark.png') center;
+    background-size:cover;
+}
+.neg_ul li:before{
+    background:url('../img/delete.png') center;
+    background-size:cover;
+}
+.pref_price_h{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
