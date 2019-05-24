@@ -921,3 +921,20 @@ h4.btitle{
         width:100%;
     }
 }
+.find_price.out_of_bounds{
+    position:absolute;
+    bottom:-320px;
+    z-index:99;
+}
+.price_desc .d-none{
+    position:relative;
+}
+.find_price_inp{
+    width:100%;
+    margin-bottom:10px;
+    font-size:14px;
+    border-radius:5px;
+    border:1px solid #a7a7a7;
+    padding:5px 15px;
+    outline:none;
+}
