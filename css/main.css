@@ -365,9 +365,9 @@ button{
     
     padding:10px;
 }
-.navbar_brand img{
+.navbar_brand a{
+    display:block;
     width:100%;
-    padding:0;
 }
 #navigation{
     padding:0;
