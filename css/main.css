@@ -365,9 +365,13 @@ button{
     
     padding:10px;
 }
-.navbar_brand a{
+.navbar-brand{
     display:block;
+    width:100%;    
+}
+.navbar-brand  img{
     width:100%;
+    
 }
 #navigation{
     padding:0;
