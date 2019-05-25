@@ -856,6 +856,16 @@ h4.btitle{
     border-radius:100%;
     float:left;
     margin-top:10px;
+    
+}
+.policy_agree .round span{
+    width:80%;
+    height:80%;
+    border-radius:100%;
+    background:#f05824;
+    display:inline-block;
+    margin:10%;
+    display:none;
 }
 .policy_agree p{
     float:left;
@@ -937,4 +947,105 @@ h4.btitle{
     border:1px solid #a7a7a7;
     padding:5px 15px;
     outline:none;
+}
+.gray_h{
+    color:#7f7f7f;
+}
+.about_container{
+    font-weight:bold;
+    font-size:16px;
+}
+.about_container .ysb_btn{
+    padding:5px 30px;
+    font-weight:normal;
+    margin:20px 0;
+}
+.cont_btn{
+    padding:5px 30px;
+    border:1px solid #a7a7a7;
+    color:#41506d;
+    font-size:16px;
+    display:inline-block;
+    margin:20px 0;
+    border-radius:3px;
+}
+.cont_btn:hover{
+    color:#41506d;
+}
+.storage_h{
+    font-size:24px;
+    padding-top:30px;
+    border-top:2px solid #c3c7cb;
+    font-weight:bold;
+}
+.metro_round{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right:20px;
+    border-radius:100%;
+}
+.orange_round{ background:#f05824;}
+.blue_round{ background:#0069b4;}
+.green_round{ background:#297825;}
+.storage_map{
+    width:100%;
+    position:relative;   
+    height:100%;
+}
+.storage_map>*{
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width:100%;
+    height:100%;
+    display:block;
+}
+.pref_cont img{
+    height:30px;    
+}
+.pref_cont .img_cont{
+    width:30px;
+    height:30px;
+    text-align:center;
+    display:inline-block;
+    margin-right:20px;
+}
+.pref_cont{
+    font-size:16px;
+    font-weight:bold;
+}
+.pref-slider{
+    width:100%;
+}
+.pref_image{
+    width:100%;
+    height:calc((var(--container-width)/2 - 30px)/1.4)!important;
+}
+@media (max-width:920px){
+    .pref_image{
+        height:calc((var(--container-width) - 30px)/1.4)!important
+    }
+}
+.type_stor_img{
+    width:100%;
+    height:calc((var(--container-width)/3 - 30px)/1.3)!important;
+}
+@media (max-width:920px){
+    .type_stor_img{
+        height:calc((var(--container-width)/2 - 30px)/1.3)!important
+    }
+}
+.storage_type{
+    margin-top:30px;
+}
+.storage_h{
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    color:#4a4a4a;
+    font-weight:normal;
 }

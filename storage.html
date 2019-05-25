@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>    
-<body>  
-    <div class="popup d-flex justify-content-center align-items-center">
+<body>
+  <div class="popup justify-content-center align-items-center d-none">
         <div class="book_form">
             <div class="main_book_form">
-                <h2>Отправить запрос на бронь</h2>
+                <h2>Заказать обратный звонок</h2>
                 <form>
                     <div class="row">
                         <div class="col-6">
@@ -35,17 +35,8 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="input_block select_block">
-                                <label>Размер бокса</label>
-                                <select>
-                                    <option>1 м²</option>
-                                </select>
-                            </div>
-                        </div> 
-                        <div class="col-6"></div>                       
-                        <div class="col-6">
-                            <button class="form_button">Отправить запрос</button>
-                        </div>
+                            <button class="form_button">Жду звонка</button>
+                        </div>                         
                         <div class="col-12 policy_agree">
                             <div class="round" onclick="checker_form()"><span></span></div>
                             <p>Нажимая на кнопку, “Жду звонка” Вы даете согласие на обработку и хранение Ваших персональных данных и политикой конфиденциальности</p>
@@ -54,7 +45,7 @@
                 </form>
             </div>
         </div>
-    </div>  
+    </div>    
    <nav class=" navbar-light navbar-expand-lg" id="navbar">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
@@ -110,163 +101,123 @@
     </div>
     
     <div id="bussiness_container" class="container main_container">
-        <div class="breadcrumbs"><a href="#">Главная</a>/Стоимость</div>
-        <h1 class="main_h">Стоимость</h1>
-        <div class="row params_containers">
-            <div class="col-6">
-                Найдено: <span class="color_blue">3 складских комплекса</span>
-            </div>
-            <div class="col-6 text-right">
-                Город: <span class="color_blue">Киев </span><img src="img/reload.png" width="20px;">
-            </div>
-        </div>
+        <div class="breadcrumbs"><a href="#">Главная</a>/<a href="#">Склады</a>/Склад на ЖД станции Дарница</div>
+        <h1 class="main_h">Склад на ЖД станции Дарница</h1>
     </div>
     <div style="background:#f7f7f7">
-        <div class="main_container container">
-            <h2 class="main_h">Боксы</h2>
-            <div class="row price_desc">
-                <div class="col-lg-6 col-12">
-                    <h3 class="color_blue">Выберите размер<br>нужного Вам бокса</h3>
-                    <div class="row price_btns">
-                        <div class="col-4 price_btn"><span>1-1,5 м²</span></div>
-                        <div class="col-4 price_btn"><span>2-4 м²</span></div>
-                        <div class="col-4 price_btn"><span class="active">2-4 м²</span></div>
-                        <div class="col-4 price_btn"><span>10-14 м²</span></div>
-                        <div class="col-4 price_btn"><span>16-20 м²</span></div>
-                        <div class="col-4 price_btn"><span>22-100 м²</span></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 d-none d-lg-flex justify-content-center">
-                    <div class="find_price">
-                        <h4 class="color_blue">Не знаете какого размера выбрать бокс?</h4>
-                        <p>Специалисты YSB подберут минимальное количество м² для Ваших потребностей, чтобы Вы не переплачивали.</p>
-                        <a href="#" class="ysb_btn">Узнать</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row price_block">
-                <div class="col-12 col-lg-6 cont">
-                    <div class="price_block_info">
-                        <div class="head_price_info">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <h4 class="color_blue">Склад на Бориспольской</h4>
-                                    <h5 class="street_info">г.Киев, Бориспольская,7</h5>
-                                </div>
-                                <div class="col-lg-4 text-right">
-                                    <a href="#">Подробнее о складе</a>
-                                </div>
-                            </div>
+        <div class="main_container container about_container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <p class="gray_h text-lg-left text-center">Более 400 помещений от 1до 100 м²</p>
+                    <p class="text-lg-left text-center">Киев, ул. Бориспольская, 7</p>
+                    <p class="text-lg-left text-center">+38(093)-644-24-24<br>+38(095)-644-24-24<br>+38(097)-644-24-24</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="gray_h">Доступ на склад</p>
+                            <p>24 часа в сутки<br>7 дней в неделю</p>                            
                         </div>
-                        <div class="price_one_item">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">0,5м²</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn">Забронировать</a></div>
-                            </div>
-                        </div>
-                        <div class="price_one_item text-center text-lg-left">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">0,5м²</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn">Забронировать</a></div>
-                            </div>
-                        </div>
-                        <div class="price_one_item text-center text-lg-left">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">0,5м²</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn gray_btn">Запрос на бронь</a></div>
-                            </div>
-                        </div>
-                        <div class="price_one_item text-center text-lg-left">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">0,5м²</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn gray_btn">Запрос на бронь</a></div>
-                            </div>
+                        <div class="col-6">
+                            <p class="gray_h">Время работи офиса</p>
+                            <p>Пн- пт. 09:00 - 18:00<br>Сб- вс. выходной</p>                            
                         </div>
                     </div>                    
-                </div>
-                <div class="col-12 col-lg-6 map">                    
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                    
-                </div>
-            </div>
-            <h2 class="main_h">Контейнери</h2>
-            <div class="row price_block">
-                <div class="col-12 col-lg-6 cont">
-                    <div class="price_block_info">
-                        <div class="head_price_info">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <h4 class="color_blue">Контейнер на Бориспольской</h4>
-                                    <h5 class="street_info">г.Киев, Бориспольская,7</h5>
-                                </div>
-                                <div class="col-lg-4 text-right">
-                                    <a href="#">Подробнее о складе</a>
-                                </div>
-                            </div>
+                    <h3 class="storage_h text-lg-left text-center">Ближайшие станции метро:</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="metro_st"><span class="metro_round orange_round"></span> Дарница</p>
                         </div>
-                        <div class="price_one_item">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">5 футов</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn">Забронировать</a></div>
-                            </div>
+                        <div class="col-6">
+                            <p class="metro_st"><span class="metro_round green_round"></span> Бориспольская</p>
                         </div>
-                        <div class="price_one_item text-center text-lg-left">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">10 футов</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn">Забронировать</a></div>
-                            </div>
+                        <div class="col-6">
+                            <p class="metro_st"><span class="metro_round blue_round"></span> Лыбедская</p>
                         </div>
-                        <div class="price_one_item text-center text-lg-left">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">20 футов</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn gray_btn">Запрос на бронь</a></div>
-                            </div>
-                        </div>
-                        <div class="price_one_item text-center text-lg-left">
-                            <div class="row text-center text-lg-left align-items-center">
-                                <div class="col-lg-3 col-6"><span class="square">40 футов</span></div>
-                                <div class="col-lg-4 col-6"><p class="detail">остался 1 бокс</p><p class="price">700 грн/мес.</p></div>
-                                <div class="col-lg-5 col-12 text-center text-lg-right"><a href="#" class="ysb_btn gray_btn">Запрос на бронь</a></div>
-                            </div>
+                        <div class="col-6">
+                            <p class="metro_st"><span class="metro_round green_round"></span> Красный Хутор</p>
                         </div>
                     </div>                    
-                </div>
-                <div class="col-12 col-lg-6 map">                    
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                    
+                </div>   
+                <div class="col-12 col-lg-5 d-block d-lg-none">
+                    <div class="text-center">
+                        <button onclick="order_form();" class="ysb_btn">Забронировать</button>
+                    </div>
+                </div>              
+                <div class="col-12 col-lg-7 map">                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                                        
+                </div>             
+                <div class="col-12 col-lg-5 d-none d-lg-block">
+                    <div class="text-center">
+                        <button class="ysb_btn" onclick="order_form();">Забронировать</button>
+                    </div>
+                </div>   
+                <div class="col-12 col-lg-7">
+                    <div class="text-center">
+                        <a href="#" class="cont_btn">Построить маршут до склада</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container main_container">
+        <h2 class="main_h">Преимущества YSB</h2>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <h4 class="color_blue pref_price_h text-center text-lg-left">Вещи, которые мы принимаем на хранение:</h4>                
-                <ul class="pos_ul">
-                    <li>Мебель и бытовую технику</li>
-                    <li>Лодки, снегоходы, скутеры и др.</li>
-                    <li>Съемочный инвентарь и декорации</li>
-                    <li>Коляски, санки, лыжи, велосипеды</li>
-                    <li>Товары интернет-магазинов</li>
-                    <li>Летние павильоны (шатры, столы)</li>
-                </ul>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-time.png" alt="icon_pref"></span>Любой срок аренды</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-a.png" alt="icon_pref"></span>Комфортные, удобные склады класса А </p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-clean.png" alt="icon_pref"></span>У нас чисто, проводим регулярную уборку</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-box.png" alt="icon_pref"></span>Вы можете приобрести у нас стеллажи, коробки, скотч </p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-size.png" alt="icon_pref"></span>Вы в ЛЮБОЙ МОМЕНТ можете поменять размер склада</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-cam.png" alt="icon_pref"></span>Круглосуточное видеонаблюдение, охрана</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-deliv.png" alt="icon_pref"></span>Окажем помощь в перевозке Ваших вещей</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-temp.png" alt="icon_pref"></span>Температурный режим от +15 до +18 t</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-elevator.png" alt="icon_pref"></span>Удобство в хранении. Первый этаж. Очень широкие двери.</p>
+                <p class="pref_cont"><span class="img_cont"><img src="img/icon-alarm.png" alt="icon_pref"></span>Установлена пожарная сигнализация</p>
             </div>
             <div class="col-12 col-lg-6">
-                <h4 class="color_blue pref_price_h text-center text-lg-left">Что нельзя хранить на складе:</h4>
-                <ul class="neg_ul">
-                    <li>Продукты, растения и животных</li>
-                    <li>Оружие и взрывоопасные предметы</li>
-                    <li>Радиоактивные и токсичные вещества</li>
-                    <li>Баллоны под давлением</li>
-                    <li>Вещества, которые выделяют запахи</li>
-                    <li>Топливо и ГСМ</li>
-                </ul>
+                <div class="pref-slider">
+                    <div class="pref_image" style="background:url(img/storage2.png) center center;background-size:cover;"></div>
+                    <div class="pref_image" style="background:url(img/article3.png) center center;background-size:cover;"></div>
+                    <div class="pref_image" style="background:url(img/article2.png) center center;background-size:cover;"></div>                    
+                </div>
             </div>
+        </div>
+        <div class="row types_storage">
+            <div class="col-6 col-lg-4 storage_type">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Склад “Unibox”</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Камеры и датчики</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Ячейка 4 кв.м</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Склад “Unibox”</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type d-none d-lg-block">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Камеры и датчики</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type d-none d-lg-block">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Ячейка 4 кв.м</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type d-none d-lg-block">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Склад “Unibox”</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type d-none d-lg-block">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Камеры и датчики</h3>
+            </div>
+            <div class="col-6 col-lg-4 storage_type d-none d-lg-block">
+                <div class="type_stor_img" style="background:url(img/storage3.png) center center;background-size:cover;"></div>
+                <h3 class="storage_h">Ячейка 4 кв.м</h3>
+            </div>     
         </div>
     </div>
     <div style="background:#f7f7f7">
@@ -385,6 +336,29 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>    
+        $('.pref-slider').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                adaptiveHeight: true,
+                prevArrow:'<span class="slick-prev inside"><i class="fas fa-angle-left"></i></span>',
+                nextArrow:'<span class="slick-next inside"><i class="fas fa-angle-right"></i></span>',                              
+              
+            });
+        function order_form(){            
+            $('.popup').removeClass('d-none').addClass('d-flex');
+        }
+        function checker_form(){
+            if($(".policy_agree .round span").css("display") == 'inline-block'){
+                $(".policy_agree .round span").css("display",'none');
+            }
+            else{
+                $(".policy_agree .round span").css("display",'inline-block');
+            }
+        }
+    </script>
 </body>
 </html>
-    
