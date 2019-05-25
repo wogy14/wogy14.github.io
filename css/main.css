@@ -224,29 +224,102 @@ button{
     left:25px;
     color:#a7a7a7;
 }
-.input_block input,.input_block select{
+
+.input_block select,.input_block input
+ {
+    color:#41506d;
     width:100%;
     padding:20px 20px 5px 20px;
-    border-radius:5px;
-    border:2px solid #a7a7a7;
-    outline:none;
-    font-size:20px;
-    color:#41506d;
-    -webkit-appearance: none;
+    border: 2px solid #969696;
+    border-radius: 5px;
     -moz-appearance: none;
-    appearance: none; 
-    
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    width:100%;
+    font-size:20px;  
+     outline:none;
+     box-shadow:none;
 }
-.select_block:before{
+
+.input_block select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.2em top 50%, 0 0;
+    background-size: .80em auto, 100%;      
+}
+.input_block .select:before{
     position:absolute;
     content:'';
-    width:60px;
+    border-left:2px solid #7f7f7f;
     height:100%;
+    width:3em;
     right:0;
     top:0;
-    background:url("../img/caret-down-solid.svg") center center no-repeat;
-    background-size: 30px 30px;
-    border-left:2px solid #a7a7a7;
+}
+.policy_agree input[type="radio"]:checked,
+.policy_agree input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.policy_agree input[type="radio"]:checked + label,
+.policy_agree input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.policy_agree input[type="radio"]:checked + label:before,
+.policy_agree input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #9d9d9d;
+    border-radius: 100%;
+    background: #fff;
+}
+.policy_agree input[type="radio"]:checked + label:after,
+.policy_agree input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F05824;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.policy_agree input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.policy_agree input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.policy_agree label span {
+    user-select: none;
+}
+.order_form .order_form-main .selects select:hover {
+    border-color: #888;
+}
+
+.order_form .order_form-main .selects select:focus {
+    border-color: #58D332;
+    color: #222; 
+    outline: none;
 }
 .form_button{
     border:none;
@@ -420,7 +493,7 @@ footer a:hover{
     margin:0;
 }
 .footer_p{
-    padding:11px 0;
+    padding:7px 0;
 }
 .footer_socials a{
     display:inline-block;
@@ -439,6 +512,19 @@ footer a:hover{
 .footer_nav a{
     color:#dcdcdc;    
 }
+.footer_logo{
+    width:50%;
+}
+.full_version{
+    text-transform: uppercase;
+    font-size:14px;
+}
+@media (max-width:920px){
+    .footer_logo{
+        width:100%;
+    }
+}
+
 
 /* blog */
 .new{
@@ -793,7 +879,7 @@ h4.btitle{
     text-align:center;
     margin:10px 0;
 }
-.price_btn span{
+.price_btn label{
     display:inline-block;
     width:80%;
     padding:5px;
@@ -804,7 +890,11 @@ h4.btitle{
     cursor:pointer;
     color:#41506d;
 }
-.price_btn span.active{
+.price_btn input{
+    left:-9999999px;
+    position:absolute;
+}
+.price_btn input[type="radio"]:checked + label{
     background:white;
     box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2);
     color:#f05824;
@@ -953,7 +1043,7 @@ h4.btitle{
 .thank_message_body .ysb_btn{
     width:50%;
 }
-
+/*book form*/
 .book_form{
     background:white;
     padding:15px;
@@ -982,7 +1072,7 @@ h4.btitle{
     color:black;
     font-weight:900;
 }
-
+/* mainpage*/
 .mainpage_slider{
     margin:30px 0 ;
 }

@@ -51,8 +51,12 @@
                             <button class="form_button">Отправить запрос</button>
                         </div>
                         <div class="col-12 policy_agree">
-                            <div class="round" onclick="checker_form()"><span></span></div>
-                            <p>Нажимая на кнопку, “Жду звонка” Вы даете согласие на обработку и хранение Ваших персональных данных и политикой конфиденциальности</p>
+                            <div class="col-12 policy_agree">
+                                <div>
+                                   <input type="radio" id="radio_type2" name="type">
+                                    <label for="radio_type2">Нажимая на кнопку, “Жду звонка” Вы даете согласие на обработку и хранение Ваших персональных данных и политикой конфиденциальности</label>
+                                </div>                            
+                            </div>
                         </div>                  
                     </div>
                 </form>
@@ -307,8 +311,11 @@
     <footer>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-3 text-xs-center text-sm-center text-md-left">
-                    <img src="img/logo.png" alt="logo" class="w-50 footer_p">
+                <div class="col-md-3 text-center text-lg-left">
+                    <div class="row footer_p align-items-center">
+                       <div class="col-5 col-lg-12"><img class="footer_logo" src="img/logo_silver.svg" alt="logo" class="w-100 footer_p"></div>
+                        <div class="col-7 d-lg-none"><a href="#" class="full_version">Полная версия сайта</a></div>                    
+                    </div>
                     <p class="footer_p">Мы в соц. сетях:</p>
                     <div class="footer_socials footer_p  justify-content-between ">
                         <a href="" class=""><i class="fab fa-youtube"></i></a>                        
@@ -324,7 +331,7 @@
                         <img src="img/visa.png" alt="" width="25%">
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-6">
                     <ul class="footer_nav">
                         <li ><a href="#">Склады</a></li>
                         <li ><a href="#">Контейнеры</a></li>
@@ -334,7 +341,7 @@
                         <li ><a href="#">О компании</a></li>  
                     </ul>
                 </div>                
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-6">
                     <ul class="footer_nav">
                         <li ><a href="#">О компании</a></li>
                         <li ><a href="#">Блог</a></li>
@@ -342,7 +349,7 @@
                         <li ><a href="#">Обработка персональных данных</a></li>                        
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 ">
+                <div class="col-md-3 col-sm-6 text-center text-lg-left">
                     <p class="footer_p">
                         <a href="tel:+38(093)-644-24-24">+38(093)-644-24-24</a><br>
                         <a href="tel:+38(095)-644-24-24">+38(095)-644-24-24</a><br>
