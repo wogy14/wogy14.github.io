@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Склад на ЖД станции Дарница</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 </head>    
 <body>
   <div class="popup justify-content-center align-items-center d-none">
-        <div class="book_form">
+        <div class="book_form modal_cont">
+            <div class="exit_image"></div>
             <div class="main_book_form">
                 <h2>Заказать обратный звонок</h2>
                 <form>
@@ -101,8 +105,8 @@
     </div>
     
     <div id="bussiness_container" class="container main_container">
-        <div class="breadcrumbs"><a href="#">Главная</a>/<a href="#">Склады</a>/Склад на ЖД станции Дарница</div>
-        <h1 class="main_h">Склад на ЖД станции Дарница</h1>
+        <div class="breadcrumbs"><a href="#">Главная</a> / <a href="#">Склады</a> / Склад на ЖД станции Дарница</div>
+        <h2 class="main_h">Склад на ЖД станции Дарница</h2>
     </div>
     <div style="background:#f7f7f7">
         <div class="main_container container about_container">
@@ -143,7 +147,7 @@
                     </div>
                 </div>              
                 <div class="col-12 col-lg-7 map">                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.811323367686!2d-73.94908991717726!3d40.67812600749449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84d83b8b3b%3A0xcaa657c539d9dbcc!2zNTcgTmV3IFlvcmsgQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1531822028370" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                                        
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2541.5944681575083!2d30.65905265000845!3d50.43002690020572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1558800464098!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                                        
                 </div>             
                 <div class="col-12 col-lg-5 d-none d-lg-block">
                     <div class="text-center">
@@ -238,7 +242,7 @@
                 </div>
                 <div class="col-lg-3 col-4 free-th">
                     <img src="img/coffee.png">
-                    <h4 class="btitle">Гарячие напитки</h4>
+                    <h4 class="btitle">Горячие напитки</h4>
                 </div>
                 <div class="col-lg-3 col-4 free-th">
                     <img src="img/wc.png">
@@ -332,8 +336,9 @@
         </div>
     </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>    
@@ -348,17 +353,7 @@
                 nextArrow:'<span class="slick-next inside"><i class="fas fa-angle-right"></i></span>',                              
               
             });
-        function order_form(){            
-            $('.popup').removeClass('d-none').addClass('d-flex');
-        }
-        function checker_form(){
-            if($(".policy_agree .round span").css("display") == 'inline-block'){
-                $(".policy_agree .round span").css("display",'none');
-            }
-            else{
-                $(".policy_agree .round span").css("display",'inline-block');
-            }
-        }
+        
     </script>
 </body>
 </html>
