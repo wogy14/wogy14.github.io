@@ -1,0 +1,298 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #808080;
+}
+
+.green {
+    color: #49b878;
+}
+
+/*Header*/
+.navbar-brand {
+    display: inline;
+    width: auto;
+}
+
+.navbar-brand img {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: block !important;
+    }
+
+    .navbar-brand img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.navbar .nav-item .red-sp-btn {
+    color: white;
+    border-radius: 3px;
+    background: rgba(236, 33, 40, 1);
+    background: -moz-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236, 33, 40, 1)), color-stop(100%, rgba(190, 32, 45, 1)));
+    background: -webkit-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: -o-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: linear-gradient(to bottom, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec2128', endColorstr='#be202d', GradientType=0);
+    cursor: pointer;
+}
+
+.navbar .nav-item .red-sp-btn:hover {
+    color: white;
+}
+
+.navbar .nav-item .green-sp-btn {
+    color: #49b878;
+}
+
+.navbar .nav-item .green-sp-btn:hover {
+    color: #49b878;
+}
+
+.navbar {
+    background: white;
+    padding: 30px 0;
+    -webkit-box-shadow: 0px 9px 47px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 47px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 47px -13px rgba(0, 0, 0, 0.75);
+}
+
+/*demo url container*/
+#demo_url_bl {
+    padding: 50px;
+}
+
+#demo_url_bl h3 {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*Slogan block*/
+#slogan_block img {
+    width: 100%;
+}
+
+#slogan_block .row .col-lg-6 {
+    padding: 0;
+}
+
+.slogan {
+    background: url('../img/back02.png');
+    background-size: cover;
+}
+
+.slogan h3 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Crowdfunding block*/
+#crowdfunding {
+    padding: 100px 0;
+}
+
+#crowdfunding h3 {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+
+.pref-item {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pref-item img {
+    width: 85%;
+}
+
+.pref-item h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*plateforme*/
+#plateforme {
+    background: url('../img/back02.png');
+    background-size: contain;
+    color: white;
+    padding: 65px 0;
+}
+
+#plateforme h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#plateforme p {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+}
+
+/*privileges*/
+#privileges {
+    padding: 100px 0;
+}
+
+#privileges h3 {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#privileges .pref-item {
+    margin-bottom: 100px;
+}
+
+#privileges .pref-item img {
+    width: 30%;
+}
+
+#privileges .pref-item h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*offres*/
+#offres {
+    background: url('../img/back02.png');
+    background-size: cover;
+    color: white;
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+#offres h3 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#offres .main_ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#offres .main_ul li {
+    text-align: center;
+    font-size: 24px;
+    line-height: 2;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#offres .main_ul li:hover {
+    color: #58595b;
+
+}
+
+#offres .legend {
+    color: #58595b;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.offres_hidden {
+    display: none;
+    background: white;
+    color: #808080;
+    padding: 20px;
+}
+
+/*demo*/
+#demo{
+    padding:150px 0;
+    text-align:center;
+}
+.big_demo_btn{
+    border-radius:70px;
+    padding:50px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    background: rgba(236, 33, 40, 1);
+    background: -moz-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236, 33, 40, 1)), color-stop(100%, rgba(190, 32, 45, 1)));
+    background: -webkit-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: -o-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    background: linear-gradient(to bottom, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec2128', endColorstr='#be202d', GradientType=0);
+}
+.big_demo_btn:hover{
+    text-decoration:none;
+    color:white;
+}
+/*footer*/
+footer{
+    background:#3D3D3D;
+    padding:10px;    
+}
+.bott_footer_bl{
+    border-top:1px solid #808080;
+}
+.bott_footer_bl .urls{
+    text-align:center;
+    color:white;
+    font-size:14px;
+    font-weight:100;
+    padding:20px;
+    margin:0;
+}
+.bott_footer_bl .urls a{
+    color:white;
+    font-size:14px;
+    font-weight:100;
+}
+.bott_footer_bl .copy{
+    color:white;
+    text-align:center;
+    padding:0;
+    margin:0;
+    font-weight:100;
+}
+.head_footer_bl{
+    text-align:center;
+    font-size:20px;
+}
+.head_footer_bl a{
+    display:flex;
+    width:40px;
+    height:40px;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10px;
+    border-radius:3px;
+    color:#3D3D3D;
+    background:white;
+    font-size: 30px;
+}
+.head_footer_bl a:hover{
+    text-decoration:none;
+}
+.social_btn{
+    display:inline-block;
+}
