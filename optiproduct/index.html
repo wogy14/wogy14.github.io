@@ -208,11 +208,15 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        function get_hidden(el) {            
+        function get_hidden(el) {
+            var is = $(el).find("h4").hasClass("active");
             $(".hidden_ul").hide(500);
             $(".active").removeClass("active");
-            $(el).find("h4").addClass("active");
-            $(el).find(".hidden_ul").show(500);
+            if(!is){
+                $(el).find("h4").addClass("active");
+                $(el).find(".hidden_ul").show(500);
+            }     
+            
         }
         $(function() {
             $("#hidden_bl").height($("#navbar").innerHeight());            
