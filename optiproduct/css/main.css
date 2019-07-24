@@ -320,3 +320,47 @@ footer {
 .social_btn {
     display: inline-block;
 }
+/* faq */
+.demo_url{
+    color:#ffb400;
+    font-weight:bold;
+    font-size:15px;
+    border-bottom:3px solid black;
+    
+}
+.demo_url a{
+    display:inline-block;
+    color:#ffb400;
+    text-decoration:none;
+    padding:30px 0;
+}
+.breadcrumb{
+    background:none;
+    padding:30px 15px;
+    font-weight:normal;
+    color:black;
+}
+.breadcrumb a{
+    color:black;
+    text-decoration:underline;
+}
+#faq_top{
+    color:black;
+    font-size:32px;
+    text-align:center;
+    font-weight:bold;
+}
+#faq h2{
+    margin-bottom:10px;
+    font-weight:500;
+    color:black;
+    font-size:22px;
+}
+#faq p{
+    font-weight:normal;
+    color:black;
+}
+.col-sm-3 .right{
+    
+    text-align:right;
+}
