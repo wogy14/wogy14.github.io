@@ -52,7 +52,7 @@ header h1 {
 }
 
 #contact {
-    overflow:auto;
+    overflow:hidden;
     background: #D66836;    
     padding:30px;
 }
@@ -64,6 +64,8 @@ header h1 {
     margin:0;
     margin-bottom:20px;
     text-align: center;
+    background:#D66836;
+    cursor:pointer;
 }
 #contact p{
     color:white;
@@ -89,4 +91,7 @@ footer{
     font-size:14px;
     padding:30px;
     text-align:center;
+}
+.contact_info{
+    display:none;
 }
