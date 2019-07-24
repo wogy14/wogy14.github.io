@@ -28,10 +28,10 @@
                 <div class="col-12 col-lg-10">
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav ml-auto nav-pills justify-content-between" id="navigation">
-                            <li class="nav-item"><a class="nav-link" href="#crowdfunding">Crowdfunding</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#plateforme">Plateforme en marque blanche</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#privileges">Vos privilèges</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#offres">Nos offres</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#crowdfunding">Crowdfunding</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#plateforme">Plateforme en marque blanche</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#privileges">Vos privilèges</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#offres">Nos offres</a></li>
                             <li class="nav-item"><a class="nav-link red-sp-btn" href="http://demo.optifunding.com">Demandez votre démo</a></li>
                             <li class="nav-item"><a class="nav-link green-sp-btn" href="#"><i class="fas fa-user"></i> Se connecter</a></li>
                         </ul>
@@ -223,7 +223,14 @@
         }
         $(function() {
             $("#hidden_bl").height($("#navbar").innerHeight());
-            
+            $("a.scrollto").click(function() {
+                var elementClick = $(this).attr("href")
+                var destination = $(elementClick).offset().top - $("#navbar").innerHeight();
+                jQuery("html:not(:animated),body:not(:animated)").animate({
+                    scrollTop: destination
+                }, 800);
+                return false;
+            });
         });
 
     </script>

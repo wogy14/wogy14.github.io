@@ -28,10 +28,10 @@
                 <div class="col-12 col-lg-10">
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav ml-auto nav-pills justify-content-between" id="navigation">
-                            <li class="nav-item"><a class="nav-link" href="#creation">Création participative</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#plateforme">Plateforme en marque blanche</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#privileges">Vos privilèges</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#offres">Nos offres</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#creation">Création participative</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#plateforme">Plateforme en marque blanche</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#privileges">Vos privilèges</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#offres">Nos offres</a></li>
                             <li class="nav-item"><a class="nav-link red-sp-btn" href="http://demo.optiproduct.com">Accédez à la démo</a></li>
                             <li class="nav-item"><a class="nav-link yellow-sp-btn" href="#"><i class="fas fa-user"></i> Anonyme</a></li>
                         </ul>
@@ -127,7 +127,8 @@
         <div class="container">
             <h3>Nos Offres</h3>
             <ul class="main_ul">
-                <li onclick="get_hidden(this)"><h4>Définition et validation de vos besoins</h4>
+                <li onclick="get_hidden(this)">
+                    <h4>Définition et validation de vos besoins</h4>
                     <ul class="hidden_ul">
                         <li>Vidéo, newsletters, community management</li>
                         <li>Dénomination plateforme, charte graphique, URL, e-mailing…</li>
@@ -135,7 +136,8 @@
                         <li>Formation, assistance technique et back-office, assistance juridique…</li>
                     </ul>
                 </li>
-                <li onclick="get_hidden(this)"><h4>Optimisation et personnalisation de votre plateforme</h4>
+                <li onclick="get_hidden(this)">
+                    <h4>Optimisation et personnalisation de votre plateforme</h4>
                     <ul class="hidden_ul">
                         <li>Personnalisation (intégration de votre logo, code couleur, URL, home page…)</li>
                         <li>Responsive design</li>
@@ -150,7 +152,8 @@
                         <li>Prise en charge de la maintenance évolutive</li>
                     </ul>
                 </li>
-                <li onclick="get_hidden(this)"><h4>Assistance</h4>
+                <li onclick="get_hidden(this)">
+                    <h4>Assistance</h4>
                     <ul class="hidden_ul">
                         <li>Assistance / Accompagnement des porteurs (présentation projet...) *</li>
                         <li>Formation de la prise en main et de la gestion de la plateforme</li>
@@ -162,7 +165,8 @@
                         <li>Assistance / accompagnement des porteurs (présentation projet...) *</li>
                     </ul>
                 </li>
-                <li onclick="get_hidden(this)"><h4>Options fonctionnelles</h4>
+                <li onclick="get_hidden(this)">
+                    <h4>Options fonctionnelles</h4>
                     <ul class="hidden_ul">
                         <li>Gestion des profils</li>
                         <li>Alerte avant la fin de la campagne</li>
@@ -170,7 +174,8 @@
                         <li>Chat, blog *</li>
                     </ul>
                 </li>
-                <li onclick="get_hidden(this)"><h4>Services plus *</h4>
+                <li onclick="get_hidden(this)">
+                    <h4>Services plus *</h4>
                     <ul class="hidden_ul">
                         <li>Dépôt de nom de domaine *</li>
                         <li>Réalisation de vidéo et gestion *</li>
@@ -212,14 +217,22 @@
             var is = $(el).find("h4").hasClass("active");
             $(".hidden_ul").hide(500);
             $(".active").removeClass("active");
-            if(!is){
+            if (!is) {
                 $(el).find("h4").addClass("active");
                 $(el).find(".hidden_ul").show(500);
-            }     
-            
+            }
+
         }
         $(function() {
-            $("#hidden_bl").height($("#navbar").innerHeight());            
+            $("#hidden_bl").height($("#navbar").innerHeight());
+            $("a.scrollto").click(function() {
+                var elementClick = $(this).attr("href")
+                var destination = $(elementClick).offset().top - $("#navbar").innerHeight();
+                jQuery("html:not(:animated),body:not(:animated)").animate({
+                    scrollTop: destination
+                }, 800);
+                return false;
+            });
         });
 
     </script>

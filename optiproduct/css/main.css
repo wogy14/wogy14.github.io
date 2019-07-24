@@ -45,15 +45,15 @@ body {
     cursor: pointer;
 }
 
-.navbar .nav-item .red-sp-btn:hover {
+#navbar .nav-item .red-sp-btn:hover {
     color: white;
 }
 
-.navbar .nav-item .yellow-sp-btn {
+#navbar .nav-item .yellow-sp-btn {
     color: #f6ae1d;
 }
 
-.navbar .nav-item .yellow-sp-btn:hover {
+#navbar .nav-item .yellow-sp-btn:hover {
     color: #f6ae1d;
 }
 
@@ -63,6 +63,10 @@ body {
     -webkit-box-shadow: 0px 9px 47px -13px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 9px 47px -13px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 9px 47px -13px rgba(0, 0, 0, 0.75);
+}
+
+#navbar .nav-link:hover {
+    color: black;
 }
 
 /*demo url container*/
@@ -205,7 +209,7 @@ body {
 
 #offres .main_ul h4:hover {
     color: #58595b;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 #offres .legend {
@@ -213,33 +217,36 @@ body {
     font-size: 22px;
     font-weight: bold;
     cursor: default;
-    text-align:center;
+    text-align: center;
 }
-.hidden_ul{
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-weight:normal;
-    font-size:18px;
-    list-style-type:none;
-    display:none;
+
+.hidden_ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    list-style-type: none;
+    display: none;
 }
-#offres .main_ul h4.active{
+
+#offres .main_ul h4.active {
     color: #58595b;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 /*demo*/
-#demo{
-    padding:150px 0;
-    text-align:center;
+#demo {
+    padding: 150px 0;
+    text-align: center;
 }
-.big_demo_btn{
-    border-radius:70px;
-    padding:50px;
-    font-size:20px;
-    font-weight:bold;
-    color:white;
+
+.big_demo_btn {
+    border-radius: 70px;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
     background: rgba(236, 33, 40, 1);
     background: -moz-linear-gradient(top, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236, 33, 40, 1)), color-stop(100%, rgba(190, 32, 45, 1)));
@@ -249,57 +256,67 @@ body {
     background: linear-gradient(to bottom, rgba(236, 33, 40, 1) 0%, rgba(190, 32, 45, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec2128', endColorstr='#be202d', GradientType=0);
 }
-.big_demo_btn:hover{
-    text-decoration:none;
-    color:white;
+
+.big_demo_btn:hover {
+    text-decoration: none;
+    color: white;
 }
+
 /*footer*/
-footer{
-    background:#3D3D3D;
-    padding:10px;    
+footer {
+    background: #3D3D3D;
+    padding: 10px;
 }
-.bott_footer_bl{
-    border-top:1px solid #808080;
+
+.bott_footer_bl {
+    border-top: 1px solid #808080;
 }
-.bott_footer_bl .urls{
-    text-align:center;
-    color:white;
-    font-size:14px;
-    font-weight:100;
-    padding:20px;
-    margin:0;
+
+.bott_footer_bl .urls {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 20px;
+    margin: 0;
 }
-.bott_footer_bl .urls a{
-    color:white;
-    font-size:14px;
-    font-weight:100;
+
+.bott_footer_bl .urls a {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
 }
-.bott_footer_bl .copy{
-    color:white;
-    text-align:center;
-    padding:0;
-    margin:0;
-    font-weight:100;
+
+.bott_footer_bl .copy {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
 }
-.head_footer_bl{
-    text-align:center;
-    font-size:20px;
+
+.head_footer_bl {
+    text-align: center;
+    font-size: 20px;
 }
-.head_footer_bl a{
-    display:flex;
-    width:40px;
-    height:40px;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:10px;
-    border-radius:3px;
-    color:#3D3D3D;
-    background:white;
+
+.head_footer_bl a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    color: #3D3D3D;
+    background: white;
     font-size: 30px;
 }
-.head_footer_bl a:hover{
-    text-decoration:none;
+
+.head_footer_bl a:hover {
+    text-decoration: none;
 }
-.social_btn{
-    display:inline-block;
+
+.social_btn {
+    display: inline-block;
 }
