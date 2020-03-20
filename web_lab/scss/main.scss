@@ -1,0 +1,81 @@
+@import 'vars';
+@import 'mixins';
+
+body {
+  font-family: $font-primary;
+  color: $primary-text-color;
+  font-weight: 100;
+}
+
+.wrapper {
+  background: url('../img/login_background.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  z-index: 1;
+  overflow:auto;
+}
+
+header {
+  padding: 15px;
+}
+
+.default-block {
+  @include default-block;
+  margin-bottom: 30px;
+}
+
+.main-navbar {
+  .navbar-brand {
+    font-size: 36px;
+    font-weight: 500;
+    color: $primary-text-color;
+  }
+
+  .nav-item {
+    font-size: 24px;
+    padding: 10px;
+
+    .nav-link {
+      color: rgba(0,0,0,.7);
+
+      &:hover {
+        color: rgba(0,0,0,1);
+      }
+    }
+  }
+}
+
+.block-title {
+  font-size: 36px;
+  border-bottom: 1px solid #212529;
+  padding: 10px 0;
+}
+
+.default-btn {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+  background: $secondary-color;
+  border: 0;
+  border-radius: 0;
+  font-size: 18px;
+  color: white;
+
+  &:hover {
+    background: darken($secondary-color, 10);
+    color: white;
+  }
+}
+
+.default-input {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #8c8c8c;
+  font-size: 16px;
+
+  &:focus {
+    border-color: $secondary-color;
+    outline: none;
+    box-shadow: none;
+  }
+}

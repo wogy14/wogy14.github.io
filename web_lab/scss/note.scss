@@ -1,0 +1,87 @@
+@import 'vars';
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  .tag {
+    display: inline-block;
+    margin: 2px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+.note-authors {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    text-align: center;
+  }
+
+  .main-author {
+    font-weight: bold;
+  }
+}
+
+.note-add-new {
+  border: 2px solid $secondary-color;
+  border-radius: 10px;
+  color: $secondary-color;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &:hover {
+    background: $secondary-color;
+    color: white;
+  }
+}
+
+.option-buttons {
+  text-align: right;
+
+  .option-button {
+    background: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 3px 6px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .edit-btn {
+    border: 2px solid #F39C12;
+    color: #F39C12;
+
+    &:hover {
+      background: #F39C12;
+      color: white;
+    }
+  }
+
+  .delete-btn {
+    border: 2px solid #C0392B;
+    color: #C0392B;
+
+    &:hover {
+      background: #C0392B;
+      color: white;
+    }
+  }
+
+  .save-btn {
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+
+    &:hover {
+      background: $secondary-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags .tag {
+  display: inline-block;
+  margin: 2px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.note-authors {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.note-authors li {
+  text-align: center;
+}
+.note-authors .main-author {
+  font-weight: bold;
+}
+
+.note-add-new {
+  border: 2px solid #1c7430;
+  border-radius: 10px;
+  color: #1c7430;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.note-add-new:hover {
+  background: #1c7430;
+  color: white;
+}
+
+.option-buttons {
+  text-align: right;
+}
+.option-buttons .option-button {
+  background: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 3px 6px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+.option-buttons .edit-btn {
+  border: 2px solid #F39C12;
+  color: #F39C12;
+}
+.option-buttons .edit-btn:hover {
+  background: #F39C12;
+  color: white;
+}
+.option-buttons .delete-btn {
+  border: 2px solid #C0392B;
+  color: #C0392B;
+}
+.option-buttons .delete-btn:hover {
+  background: #C0392B;
+  color: white;
+}
+.option-buttons .save-btn {
+  border: 2px solid #1c7430;
+  color: #1c7430;
+}
+.option-buttons .save-btn:hover {
+  background: #1c7430;
+  color: white;
+}
+
+/*# sourceMappingURL=note.css.map */

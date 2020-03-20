@@ -1,0 +1,100 @@
+.tags-block {
+  margin-bottom: 30px;
+}
+.tags-block .tags {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tags-block .tags .tag {
+  display: inline-block;
+  margin: 2px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.note {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 30px;
+  height: auto;
+}
+.note:hover {
+  padding: 20px 15px;
+}
+.note a {
+  color: #212529;
+}
+.note a:hover {
+  text-decoration: none;
+}
+.note .note-header h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.note .note-body p {
+  line-height: 1.4em;
+  max-height: 4.2em;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.note .note-tagline {
+  display: flex;
+  flex-wrap: wrap;
+}
+.note .note-tagline .tag {
+  display: block;
+  height: 20px;
+  min-width: 10%;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.notes:hover .note:not(:hover) {
+  opacity: 0.5;
+  background: white;
+}
+
+.add-new-note-btn {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+}
+.add-new-note-btn:hover {
+  background: #e6e6e6;
+}
+.add-new-note-btn::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 10px;
+  background: #1c7430;
+  top: 45px;
+  left: 15%;
+  border-radius: 10px;
+}
+.add-new-note-btn::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 10px;
+  background: #1c7430;
+  left: 45px;
+  top: 15%;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

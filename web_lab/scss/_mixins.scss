@@ -1,0 +1,14 @@
+@import "vars";
+
+@mixin default-block {
+  background: rgba(255,255,255,1);
+  padding:20px;
+  border-radius: $primary-border-radius;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .3);
+  border: 1px solid #ccc;
+  transition: .3s;
+
+  &:hover {
+    background: rgba(255,255,255,1);
+  }
+}

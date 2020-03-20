@@ -1,0 +1,107 @@
+#sign-page {
+  background: url("../img/login_background.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+#sign-page:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.sign-wrapper {
+  background: white;
+  padding: 30px;
+  z-index: 3;
+  min-width: 28%;
+  border: 1px solid #ccc;
+}
+.sign-wrapper h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.sign-wrapper .form-group input {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #8c8c8c;
+  font-size: 16px;
+}
+.sign-wrapper .form-group input:focus {
+  border-color: #1c7430;
+}
+.sign-wrapper .sign-button-wrapper {
+  text-align: right;
+}
+.sign-wrapper .sign-button {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  background: #1c7430;
+  border: 0;
+  border-radius: 0;
+  font-size: 18px;
+}
+.sign-wrapper .sign-button:hover {
+  background: #124b1f;
+}
+.sign-wrapper .other-login-methods {
+  text-align: center;
+}
+.sign-wrapper .other-login-methods h3 {
+  font-weight: 100;
+  margin: 15px 0;
+}
+.sign-wrapper .social-auth-buttons {
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+.sign-wrapper .social-auth-buttons a {
+  padding: 10px 20px;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.sign-wrapper .social-auth-buttons .facebook-login {
+  border: 1px solid #3b5998;
+  color: #3b5998;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+}
+.sign-wrapper .social-auth-buttons .facebook-login:hover {
+  background: #3b5998;
+  color: white;
+}
+.sign-wrapper .social-auth-buttons .google-login {
+  color: #DC4A3D;
+  border: 1px solid #DC4A3D;
+  border-radius: 0 5px 5px 0;
+  border-left: 0;
+}
+.sign-wrapper .social-auth-buttons .google-login:hover {
+  background: #DC4A3D;
+  color: white;
+}
+.sign-wrapper .other-type-sign {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.sign-wrapper .other-type-sign h3 {
+  font-size: 16px;
+}
+.sign-wrapper .other-type-sign a {
+  color: #1c7430;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=sign.css.map */
