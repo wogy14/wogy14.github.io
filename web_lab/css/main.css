@@ -5,11 +5,12 @@ body {
 }
 
 .wrapper {
-  background: url("../img/login_background.jpg");
   min-height: 100vh;
-  background-size: cover;
   z-index: 1;
   overflow: auto;
+  background: url("../img/login_background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
