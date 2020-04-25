@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="signForm">
+    <div class="container" id="loginForm">
+        <div class="card mt-5 mb-5 p-2">
+            <h2>Login</h2>
+            <form onsubmit="login(); return false;">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" id="login_email_input" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" id="login_password_input" type="password">
+                </div>
+                <button class="btn btn-success">Login</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="registrationForm">
+        <div class="card mt-5 mb-5 p-2">
+            <h2>Registration</h2>
+            <form onsubmit="registration();return false;">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" id="reg_name_input" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" id="reg_email_input" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" id="reg_password_input" type="text">
+                </div>
+                <button class="btn btn-success">Registration</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="logoutForm">
+        <div class="card mt-5 mb-5 p-2">
+            <button class="btn btn-success" onclick="logout()">Logout</button>
+        </div>
+    </div>
+</div>
+
+<div id="apiExplorer">
+    <div class="container">
+        <div class="card mt-5 mb-5 p-2">
+            <h2>API Explorer</h2>
+            <form>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="entity_select">Entity</label>
+                        <select class="form-control" id="entity_select"
+                                onchange="changeListOfEndPoints(this.value);changeRequestParams()"></select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="endpoint_select">Endpoint</label>
+                        <select class="form-control" id="endpoint_select" onchange="changeRequestParams()"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="generated_url">Request</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="request_method">GET</span>
+                        </div>
+                        <input class="form-control" id="generated_url" value="https://localhost/api/note/get">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="request_params">Params in JSON</label>
+                    <textarea class="form-control" id="request_params" rows="10">{}</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-success" onclick="makeRequestToApi()">Execute</button>
+                </div>
+                <div class="form-group">
+                    <label>Response</label>
+                    <div class="bg-dark p-3">
+                        <pre><code id="response" class="text-light"></code></pre>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="requests.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
